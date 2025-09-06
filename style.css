@@ -48,20 +48,26 @@ header {
   flex-wrap: wrap;
 }
 
-.logo-video {
+.logo {
   display: flex;
   align-items: center;
+  gap: 10px; /* spacing between logo video and text */
+}
+
+.logo-wrapper {
+  width: 60px;   /* adjust as needed */
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-video {
-  height: 50px;   /* reduce height */
-  width: auto;    /* keeps aspect ratio */
-  margin-right: 10px;
-  border-radius: 6px; /* optional */
-  object-fit: contain; /* makes sure video fits */
-}
-
-
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* keeps proportions */
+  border-radius: 6px;  /* optional rounded corners */
 }
 
 .logo-text h1 {
@@ -400,6 +406,7 @@ nav a.active {
 .payment-card:hover i {
   transform: scale(1.2) rotate(10deg);
 }
+
 
 
 
