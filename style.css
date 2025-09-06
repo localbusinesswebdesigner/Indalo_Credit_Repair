@@ -54,11 +54,13 @@ header {
 }
 
 .logo-video {
-  height: 70px;   /* adjust size */
-  width: auto;
-  margin-right: 15px;
-  border-radius: 8px;  /* optional */
+  height: 50px;   /* reduce height */
+  width: auto;    /* keeps aspect ratio */
+  margin-right: 10px;
+  border-radius: 6px; /* optional */
+  object-fit: contain; /* makes sure video fits */
 }
+
 
 }
 
@@ -398,6 +400,7 @@ nav a.active {
 .payment-card:hover i {
   transform: scale(1.2) rotate(10deg);
 }
+
 
 
 
