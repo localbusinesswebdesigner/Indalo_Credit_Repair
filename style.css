@@ -53,10 +53,13 @@ header {
   align-items: center;
 }
 
-.logo i {
-  font-size: 2.5rem;
-  margin-inline-end: 15px;
-  color: var(--accent);
+.logo-video {
+  height: 70px;   /* adjust size */
+  width: auto;
+  margin-right: 15px;
+  border-radius: 8px;  /* optional */
+}
+
 }
 
 .logo-text h1 {
@@ -395,5 +398,6 @@ nav a.active {
 .payment-card:hover i {
   transform: scale(1.2) rotate(10deg);
 }
+
 
 
