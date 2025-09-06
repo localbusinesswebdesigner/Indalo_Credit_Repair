@@ -72,10 +72,10 @@ header {
   object-fit: cover; /* fills the space */
 }
 
-
+/* Navigation */
 .navbar {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* sits above the video */
 }
 
 .navbar ul {
@@ -92,8 +92,9 @@ header {
 }
 
 .navbar ul li a:hover {
-  color: #00ffcc; /* highlight on hover */
+  color: #00ffcc;
 }
+
 
 /* Hero Section */
 .hero {
@@ -399,6 +400,7 @@ nav a.active {
 .payment-card:hover i {
   transform: scale(1.2) rotate(10deg);
 }
+
 
 
 
