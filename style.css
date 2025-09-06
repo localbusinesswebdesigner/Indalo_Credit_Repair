@@ -49,57 +49,60 @@ header {
 }
 
 .logo {
+  position: relative;
+  width: 100%;
+  height: 250px; /* adjust for how tall you want the top section */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px; /* spacing between logo video and text */
+  justify-content: center;
+  overflow: hidden;
 }
 
 .logo-wrapper {
-  width: 60px;   /* adjust as needed */
-  height: 60px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .logo-video {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* keeps proportions */
-  border-radius: 6px;  /* optional rounded corners */
+  object-fit: cover; /* fills the space */
 }
 
-.logo-text h1 {
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.logo-text h2 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--light);
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li {
-  margin-inline-start: 1.5rem;
-}
-
-nav a {
+.logo-text {
+  position: relative;
   color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 4px;
-  transition: var(--transition);
+  z-index: 2;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  margin-bottom: 10px;
 }
 
-nav a:hover {
-  background: rgba(255, 255, 255, 0.1);
+.navbar {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #00ffcc; /* highlight on hover */
 }
 
 /* Hero Section */
@@ -406,6 +409,7 @@ nav a.active {
 .payment-card:hover i {
   transform: scale(1.2) rotate(10deg);
 }
+
 
 
 
