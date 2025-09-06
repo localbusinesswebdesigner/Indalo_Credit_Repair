@@ -48,7 +48,7 @@ header {
   flex-wrap: wrap;
 }
 
-.logo {
+.logo-video {
   display: flex;
   align-items: center;
 }
@@ -398,6 +398,7 @@ nav a.active {
 .payment-card:hover i {
   transform: scale(1.2) rotate(10deg);
 }
+
 
 
 
