@@ -1,7 +1,8 @@
 :root {
-  --primary: #254359;   /* Dark Blue */
-  --secondary: #ad8c15; /* Gold */
-  --light: #f5f5f5;
+  --primary: #2c3e50;
+  --secondary: #3498db;
+  --accent: #27ae60;
+  --light: #ecf0f1;
   --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
 }
@@ -16,7 +17,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #fff;
-  background-image: url('assets/images/pexels-veeterzy-303383.jpg');
+  background-image: url('assets/pexels-veeterzy-303383.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -31,11 +32,12 @@ body {
 
 /* Header */
 header {
-  background: rgba(37, 67, 89, 0.95);
+  background: rgba(44, 62, 80, 0.3);
   backdrop-filter: blur(8px);
-  padding: 0.5rem 0;
+  -webkit-backdrop-filter: blur(8px);
+  padding: 1rem 0;
   position: sticky;
-  top: 0;
+  inset-block-start: 0;
   z-index: 100;
 }
 
@@ -43,57 +45,55 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Logo (top-left corner) */
 .logo {
-  width: 80px;
-  height: 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.logo-wrapper {
-  width: 100%;
-  height: 100%;
+.logo i {
+  font-size: 2.5rem;
+  margin-inline-end: 15px;
+  color: var(--accent);
 }
 
-.logo-video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 6px;
-}
-
-/* Navbar */
-.navbar {
-  position: relative;
-  z-index: 2;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: white;
+.logo-text h1 {
+  font-size: 2.2rem;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover,
-nav a.active {
-  color: var(--secondary);
-  border-bottom: 2px solid var(--secondary);
+.logo-text h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--light);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-inline-start: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Hero Section */
 .hero {
-  height: 90vh;
+  block-size: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,22 +109,21 @@ nav a.active {
 
 .hero-overlay h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
   animation: fadeInDown 1.2s ease;
-  color: var(--secondary);
 }
 
 .hero-overlay p {
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem;
   animation: fadeInUp 1.5s ease;
 }
 
 .btn-cta {
   display: inline-block;
   padding: 12px 30px;
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--accent);
+  color: #fff;
   border-radius: 50px;
   font-weight: bold;
   transition: var(--transition);
@@ -133,17 +132,18 @@ nav a.active {
 
 .btn-cta:hover {
   background: transparent;
-  border: 2px solid var(--secondary);
-  color: var(--secondary);
+  border: 2px solid var(--accent);
+  color: var(--accent);
 }
 
 /* Glass Sections */
 .section-glass {
-  background: rgba(37, 67, 89, 0.85);
-  border: 1px solid rgba(173, 140, 21, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-block-end: 2.5rem;
   box-shadow: var(--shadow);
 }
 
@@ -153,8 +153,8 @@ nav a.active {
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  inline-size: 150px;
+  block-size: 150px;
   border-radius: 50%;
   border: 5px solid var(--secondary);
   margin: 0 auto 1.5rem;
@@ -173,22 +173,16 @@ nav a.active {
 }
 
 .testimonial-card {
-  background: rgba(37, 67, 89, 0.85);
+  background: rgba(255, 255, 255, 0.2);
   padding: 1.5rem;
-  border-left: 4px solid var(--secondary);
+  border-inline-start: 4px solid var(--accent);
   border-radius: 8px;
   box-shadow: var(--shadow);
-  transition: all 0.3s ease;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .testimonial-card span {
   display: block;
-  margin-top: 10px;
+  margin-block-start: 10px;
   font-size: 0.9rem;
   opacity: 0.8;
 }
@@ -202,20 +196,19 @@ nav a.active {
 }
 
 .payment-card {
-  background: rgba(37, 67, 89, 0.85);
+  background: rgba(255, 255, 255, 0.2);
   padding: 1.8rem;
   border-radius: 8px;
-  width: 100%;
-  max-width: 500px;
+  inline-size: 100%;
+  max-inline-size: 500px;
   border: 2px solid transparent;
   transition: all 0.3s;
   text-align: center;
 }
 
 .payment-card:hover {
-  border-color: var(--secondary);
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-color: var(--accent);
+  transform: translateY(-5px);
 }
 
 .payment-card ul {
@@ -226,35 +219,30 @@ nav a.active {
 }
 
 .payment-card li {
-  margin-bottom: 0.8rem;
+  margin-block-end: 0.8rem;
   display: flex;
   align-items: center;
 }
 
 .payment-card i {
-  color: var(--secondary);
-  margin-right: 10px;
-  transition: transform 0.3s ease;
-}
-
-.payment-card:hover i {
-  transform: scale(1.2) rotate(10deg);
+  color: var(--accent);
+  margin-inline-end: 10px;
 }
 
 .price-info {
   font-weight: bold;
-  margin-top: 10px;
+  margin-block-start: 10px;
 }
 
 /* Buttons */
 .btn-pay {
   display: inline-block;
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--accent);
+  color: #fff;
   padding: 12px 25px;
   border-radius: 50px;
-  border: 2px solid var(--secondary);
-  margin-top: 10px;
+  border: 2px solid var(--accent);
+  margin-block-start: 10px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
@@ -262,12 +250,12 @@ nav a.active {
 
 .btn-pay:hover {
   background: transparent;
-  color: var(--secondary);
+  color: var(--accent);
 }
 
 /* Contact Form */
 .contact-form {
-  max-width: 600px;
+  max-inline-size: 600px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -277,7 +265,7 @@ nav a.active {
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
-  width: 100%;
+  inline-size: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -285,13 +273,13 @@ nav a.active {
 }
 
 .contact-form textarea {
-  min-height: 120px;
+  min-block-size: 120px;
   resize: vertical;
 }
 
 .submit-btn {
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--accent);
+  color: #fff;
   border: none;
   border-radius: 50px;
   padding: 12px 25px;
@@ -302,15 +290,15 @@ nav a.active {
 }
 
 .submit-btn:hover {
-  background: var(--light);
-  color: var(--secondary);
+  background: #219653;
 }
 
 /* Footer */
 footer {
-  background: #1b2a35;
+  background: rgba(44, 62, 80, 0.5);
+  backdrop-filter: blur(6px);
   padding: 2rem 0;
-  margin-top: 3rem;
+  margin-block-start: 3rem;
   text-align: center;
 }
 
@@ -318,11 +306,11 @@ footer {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-bottom: 1.5rem;
+  margin-block-end: 1.5rem;
 }
 
 footer h4 {
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
 
 .social-links {
@@ -338,7 +326,7 @@ footer h4 {
 }
 
 .social-links a:hover {
-  color: var(--secondary);
+  color: var(--accent);
 }
 
 .disclaimer {
@@ -347,7 +335,7 @@ footer h4 {
 }
 
 .credits {
-  margin-top: 10px;
+  margin-block-start: 10px;
   font-size: 0.9rem;
 }
 
@@ -377,16 +365,33 @@ footer h4 {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+nav a.active {
+  color: var(--accent);
+  border-block-end: 2px solid var(--accent);
+  font-weight: bold;
+}
+/* Hover effects for service cards */
+.payment-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 
+/* Hover effects for testimonial cards */
+.testimonial-card {
+  transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/* Animate icons inside service cards */
+.payment-features i {
+  color: var(--accent);
+  margin-inline-end: 10px;
+  transition: transform 0.3s ease;
+}
+.payment-card:hover i {
+  transform: scale(1.2) rotate(10deg);
+}
