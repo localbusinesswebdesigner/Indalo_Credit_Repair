@@ -17,7 +17,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #fff;
-  background-image: url('assets/pexels-veeterzy-303383.jpg');
+  background-image: url('assets/images/pexels-veeterzy-303383.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -395,3 +395,4 @@ nav a.active {
 .payment-card:hover i {
   transform: scale(1.2) rotate(10deg);
 }
+
