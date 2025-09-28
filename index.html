@@ -11,26 +11,32 @@
   <!-- Font Awesome CDN for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
 <!-- Header -->
 <header>
   <div class="container header-content">
-    <div class="logo">
+    <a href="#" class="logo">
       <i class="fas fa-hand-holding-usd"></i>
       <div class="logo-text">
         <h1>Indalo Credit Repair</h1>
         <h2>CRM / CREDIT SPECIALIST</h2>
       </div>
-    </div>
+    </a>
+    <button class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
     <nav>
       <ul>
+        <li><a href="#what-we-do">What We Do</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#quality">Quality</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -38,10 +44,10 @@
 
 <!-- Hero Section -->
 <section class="hero">
-  <div class="hero-overlay">
-    <h1>Take Control of Your Credit Today</h1>
-    <p>Professional credit repair & financial guidance to help you achieve stability.</p>
-    <a href="#services" class="btn-cta">Get Started</a>
+  <div class="container hero-content">
+    <h1>Take Control of Your Financial Future</h1>
+    <p>Professional credit repair and financial guidance to help you achieve stability and peace of mind.</p>
+    <a href="#services" class="btn-cta">Get Started Today</a>
   </div>
 </section>
 
@@ -49,98 +55,214 @@
 <section class="main-content container">
 
   <!-- Profile Card -->
-  <div class="section-glass profile-card fade-in">
+  <div class="card profile-card fade-in">
     <div class="profile-img"><i class="fas fa-user-tie"></i></div>
     <h3>Professional Credit Solutions</h3>
-    <p>Years of experience in credit management and customer relations. We provide expert solutions to help you achieve financial stability and growth.</p>
+    <p>With years of experience in credit management and customer relations, we provide expert solutions to help you achieve financial stability and growth. Our personalized approach ensures that each client receives the attention and guidance needed to improve their credit health.</p>
   </div>
 
-  <!-- Testimonials -->
-  <div class="section-glass fade-in" id="testimonials">
-    <h3 class="center">Client Testimonials</h3>
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <p>"Indalo helped me repair my credit in 3 months. Professional and efficient."</p>
-        <span>- Panda S., Limpopo</span>
+  <!-- What We Do Section -->
+  <div class="section-title" id="what-we-do">
+    <h2>What We Do</h2>
+    <p>Comprehensive credit repair and financial solutions tailored to your unique situation.</p>
+  </div>
+  
+  <div class="services-grid">
+    <div class="service-item fade-in">
+      <div class="service-icon">
+        <i class="fas fa-chart-line"></i>
       </div>
-      <div class="testimonial-card">
-        <p>"Insightful consultation. Clear plan to manage debt."</p>
-        <span>- Sarah K., Pretoria</span>
+      <h3>Credit Analysis</h3>
+      <p>Thorough examination of your credit reports to identify negative items and opportunities for improvement.</p>
+    </div>
+    
+    <div class="service-item fade-in">
+      <div class="service-icon">
+        <i class="fas fa-file-invoice-dollar"></i>
       </div>
-      <div class="testimonial-card">
-        <p>"Highly recommended for credit issues."</p>
-        <span>- James L., Cape Town</span>
+      <h3>Debt Management</h3>
+      <p>Strategic debt management plans to help you reduce liabilities and improve your financial standing.</p>
+    </div>
+    
+    <div class="service-item fade-in">
+      <div class="service-icon">
+        <i class="fas fa-balance-scale"></i>
       </div>
+      <h3>Dispute Resolution</h3>
+      <p>Professional dispute of inaccurate or unverifiable items on your credit reports with credit bureaus.</p>
+    </div>
+    
+    <div class="service-item fade-in">
+      <div class="service-icon">
+        <i class="fas fa-user-shield"></i>
+      </div>
+      <h3>Credit Counseling</h3>
+      <p>Personalized guidance on building and maintaining healthy credit habits for long-term financial success.</p>
+    </div>
+    
+    <div class="service-item fade-in">
+      <div class="service-icon">
+        <i class="fas fa-handshake"></i>
+      </div>
+      <h3>Creditor Negotiation</h3>
+      <p>Expert negotiation with creditors to settle debts and establish favorable payment arrangements.</p>
+    </div>
+    
+    <div class="service-item fade-in">
+      <div class="service-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <h3>Financial Education</h3>
+      <p>Comprehensive education on credit management, budgeting, and financial planning strategies.</p>
+    </div>
+  </div>
+
+  <!-- Quality Service Section -->
+  <div class="section-title" id="quality">
+    <h2>Our Quality Commitment</h2>
+    <p>We are dedicated to providing exceptional service with proven results for our clients.</p>
+  </div>
+  
+  <div class="quality-grid">
+    <div class="quality-item fade-in">
+      <div class="quality-icon">
+        <i class="fas fa-award"></i>
+      </div>
+      <h3>Proven Results</h3>
+      <p>Track record of successfully improving credit scores and resolving financial challenges for our clients.</p>
+    </div>
+    
+    <div class="quality-item fade-in">
+      <div class="quality-icon">
+        <i class="fas fa-lock"></i>
+      </div>
+      <h3>Secure & Confidential</h3>
+      <p>Your personal and financial information is protected with industry-standard security measures.</p>
+    </div>
+    
+    <div class="quality-item fade-in">
+      <div class="quality-icon">
+        <i class="fas fa-headset"></i>
+      </div>
+      <h3>Personalized Support</h3>
+      <p>Dedicated support throughout your credit repair journey with regular progress updates.</p>
+    </div>
+    
+    <div class="quality-item fade-in">
+      <div class="quality-icon">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <h3>Ethical Practices</h3>
+      <p>We adhere to strict ethical standards and comply with all relevant credit repair regulations.</p>
     </div>
   </div>
 
   <!-- Services -->
-  <div class="section-glass fade-in" id="services">
-    <h3 class="center">Professional Services</h3>
-    <p class="center">Click "Request Service" to see the price and proceed to secure payment.</p>
-    <div class="payment-options">
-      <div class="payment-card">
-        <h4>Basic Consultation</h4>
-        <ul>
-          <li><i class="fas fa-check-circle"></i> Credit report analysis</li>
-          <li><i class="fas fa-check-circle"></i> 30-minute consultation</li>
-          <li><i class="fas fa-check-circle"></i> Basic plan</li>
-        </ul>
-        <div class="price-info">R500</div>
-        <a href="https://pay.yoco.com/indalo-credit-repair?amount=500" class="btn-pay" target="_blank">Request Service</a>
-      </div>
+  <div class="section-title" id="services">
+    <h2>Our Services</h2>
+    <p>Professional credit repair services tailored to your specific needs and financial situation.</p>
+  </div>
+  
+  <div class="payment-options">
+    <div class="payment-card fade-in">
+      <h4>Basic Consultation</h4>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Credit report analysis</li>
+        <li><i class="fas fa-check-circle"></i> 30-minute consultation</li>
+        <li><i class="fas fa-check-circle"></i> Basic action plan</li>
+        <li><i class="fas fa-check-circle"></i> Email follow-up</li>
+      </ul>
+      <div class="price-info">R500</div>
+      <a href="https://pay.yoco.com/indalo-credit-repair?amount=500" class="btn-pay" target="_blank">Request Service</a>
+    </div>
 
-      <div class="payment-card">
-        <h4>Comprehensive Review</h4>
-        <ul>
-          <li><i class="fas fa-check-circle"></i> Full credit analysis</li>
-          <li><i class="fas fa-check-circle"></i> 60-minute consultation</li>
-          <li><i class="fas fa-check-circle"></i> Custom plan</li>
-        </ul>
-        <div class="price-info">R1000</div>
-        <a href="https://pay.yoco.com/indalo-credit-repair?amount=1000" class="btn-pay" target="_blank">Request Service</a>
-      </div>
+    <div class="payment-card fade-in">
+      <h4>Comprehensive Review</h4>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Full credit analysis</li>
+        <li><i class="fas fa-check-circle"></i> 60-minute consultation</li>
+        <li><i class="fas fa-check-circle"></i> Customized action plan</li>
+        <li><i class="fas fa-check-circle"></i> 2-week support</li>
+      </ul>
+      <div class="price-info">R1000</div>
+      <a href="https://pay.yoco.com/indalo-credit-repair?amount=1000" class="btn-pay" target="_blank">Request Service</a>
+    </div>
 
-      <div class="payment-card">
-        <h4>Credit Repair Package</h4>
-        <ul>
-          <li><i class="fas fa-check-circle"></i> Full credit restoration</li>
-          <li><i class="fas fa-check-circle"></i> Dispute resolution</li>
-          <li><i class="fas fa-check-circle"></i> Debt management</li>
-        </ul>
-        <div class="price-info">R1500</div>
-        <a href="https://pay.yoco.com/indalo-credit-repair?amount=1500" class="btn-pay" target="_blank">Request Service</a>
-      </div>
+    <div class="payment-card fade-in">
+      <h4>Credit Repair Package</h4>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Full credit restoration</li>
+        <li><i class="fas fa-check-circle"></i> Dispute resolution</li>
+        <li><i class="fas fa-check-circle"></i> Debt management plan</li>
+        <li><i class="fas fa-check-circle"></i> 30-day ongoing support</li>
+      </ul>
+      <div class="price-info">R1500</div>
+      <a href="https://pay.yoco.com/indalo-credit-repair?amount=1500" class="btn-pay" target="_blank">Request Service</a>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="section-title" id="testimonials">
+    <h2>Client Testimonials</h2>
+    <p>See what our satisfied clients have to say about our credit repair services.</p>
+  </div>
+  
+  <div class="testimonial-grid">
+    <div class="testimonial-card fade-in">
+      <p>"Indalo helped me repair my credit in just 3 months. Their service was professional, efficient, and they explained every step of the process clearly."</p>
+      <span>- Panda S., Limpopo</span>
+    </div>
+    <div class="testimonial-card fade-in">
+      <p>"The consultation was incredibly insightful. They provided a clear, actionable plan to manage my debt and improve my credit score significantly."</p>
+      <span>- Sarah K., Pretoria</span>
+    </div>
+    <div class="testimonial-card fade-in">
+      <p>"Highly recommended for anyone struggling with credit issues. The team was supportive throughout the entire process and delivered excellent results."</p>
+      <span>- James L., Cape Town</span>
     </div>
   </div>
 
   <!-- Contact Form -->
-  <div class="section-glass fade-in" id="contact">
-    <h3 class="center">Contact Me</h3>
+  <div class="section-title" id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for a free consultation and take the first step towards financial freedom.</p>
+  </div>
+  
+  <div class="card fade-in">
     <form action="https://formsubmit.co/indalotc@outlook.com" method="POST" class="contact-form">
       <input type="hidden" name="_subject" value="New Contact Form Submission">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
 
-      <label>Full Name *</label>
-      <input type="text" name="name" required>
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
 
-      <label>Email *</label>
-      <input type="email" name="email" required>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-      <label>Phone</label>
-      <input type="tel" name="phone">
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
 
-      <label>Interested In</label>
-      <select name="service">
-        <option value="">Select a service</option>
-        <option value="Basic Consultation">Basic Consultation</option>
-        <option value="Comprehensive Review">Comprehensive Review</option>
-        <option value="Credit Repair Package">Credit Repair Package</option>
-      </select>
+      <div class="form-group">
+        <label for="service">Interested In</label>
+        <select id="service" name="service">
+          <option value="">Select a service</option>
+          <option value="Basic Consultation">Basic Consultation</option>
+          <option value="Comprehensive Review">Comprehensive Review</option>
+          <option value="Credit Repair Package">Credit Repair Package</option>
+        </select>
+      </div>
 
-      <label>Message *</label>
-      <textarea name="message" required></textarea>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
 
       <button type="submit" class="submit-btn">Send Message</button>
     </form>
@@ -149,48 +271,36 @@
 
 <!-- Footer -->
 <footer>
-  <div class="container footer-content">
-    <div>
-      <h4>Contact Info</h4>
-      <p><i class="fas fa-envelope"></i> indalotc@outlook.com</p>
-      <p><i class="fas fa-phone"></i> 072 279 0400</p>
-      <p><i class="fas fa-phone"></i> 011 568 7788</p>
-      <p><i class="fas fa-map-marker-alt"></i> Midrand JHB 1685</p>
-    </div>
-    <div>
-      <h4>Follow Me</h4>
-      <div class="social-links">
-        <a href="https://www.tiktok.com/@charitymotor.sale" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.instagram.com/indalocredit_repair" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/share/14GjThc3MG3/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://wa.me/27764060460" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <div class="container">
+    <div class="footer-content">
+      <div>
+        <h4>Contact Info</h4>
+        <p><i class="fas fa-envelope"></i> indalotc@outlook.com</p>
+        <p><i class="fas fa-phone"></i> 072 279 0400</p>
+        <p><i class="fas fa-phone"></i> 011 568 7788</p>
+        <p><i class="fas fa-map-marker-alt"></i> Midrand JHB 1685</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.tiktok.com/@charitymotor.sale" target="blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/indalocredit_repair" target="blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/14GjThc3MG3/" target="blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/27764060460" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Business Hours</h4>
+        <p><i class="far fa-clock"></i> Mon-Fri: 08am - 5pm</p>
+        <p><i class="far fa-clock"></i> Sat: 08am - 1pm</p>
+        <p><i class="far fa-clock"></i> Sun: Closed</p>
       </div>
     </div>
-    <div>
-      <h4>Business Hours</h4>
-      <p>Mon-Fri: 08am - 5pm</p>
-      <p>Sat: 08am - 1pm</p>
-      <p>Sun: Closed</p>
-    </div>
+    <p class="disclaimer">Payments are securely processed via Yoco. Your financial information is protected with industry-standard encryption.</p>
+    <p class="credits">Website created by <a href="">Local Business Web Design</a></p>
   </div>
-  <p class="disclaimer">Payments are securely processed via Yoco.</p>
-  <p class="credits">Website created by <a href="https://github.com/doctor2012">Ncamiso Thabang</a></p>
 </footer>
-
 <!-- JavaScript -->
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
