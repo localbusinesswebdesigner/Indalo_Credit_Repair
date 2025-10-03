@@ -1,4 +1,4 @@
-  :root {
+:root {
       --primary: #1e3a5f;
       --primary-dark: #0f2a4a;
       --primary-light: #2d4f7c;
@@ -71,6 +71,7 @@
       text-decoration: none;
       color: var(--primary);
     }
+
     .logo-img {
       width: 70px;          /* control logo size */
       height: auto;         /* keeps aspect ratio */
@@ -78,7 +79,7 @@
       border-radius: 6px;   /* optional: rounded edges */
       transition: var(--transition);
     }
-    
+
     .logo:hover .logo-img {
       transform: scale(1.05);
     }
@@ -763,4 +764,5 @@
         font-size: 1.8rem;
       }
     }
+
 
