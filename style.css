@@ -71,16 +71,16 @@
       text-decoration: none;
       color: var(--primary);
     }
-
-    .logo i {
-      font-size: 2.2rem;
-      margin-right: 12px;
-      color: var(--secondary);
+    .logo-img {
+      width: 70px;          /* control logo size */
+      height: auto;         /* keeps aspect ratio */
+      margin-right: 15px;   /* space between logo and text */
+      border-radius: 6px;   /* optional: rounded edges */
       transition: var(--transition);
     }
-
-    .logo:hover i {
-      transform: scale(1.1);
+    
+    .logo:hover .logo-img {
+      transform: scale(1.05);
     }
 
     .logo-text h1 {
@@ -763,3 +763,4 @@
         font-size: 1.8rem;
       }
     }
+
