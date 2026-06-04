@@ -763,7 +763,8 @@
       .section-title h2 {
         font-size: 1.8rem;
       }
-      .experian-partner {
+    }
+            .experian-partner {
           background: #ffffff;
           padding: 50px 20px;
           text-align: center;
@@ -788,7 +789,5 @@
       .experian-logo:hover {
           transform: scale(1.05);
       }
-    }
-      
 
 
